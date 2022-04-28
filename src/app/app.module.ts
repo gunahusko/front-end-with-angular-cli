@@ -3,13 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlannerSimpleComponent } from './components/planner-simple/planner-simple.component';
+import { PlannerSimpleComponent } from './components/planner/planner-simple/planner-simple.component';
 import {FormsModule} from "@angular/forms";
+import { HeaderComponent } from './components/header/header.component';
+import { PlannerComponent } from './components/planner/planner.component';
+import { PlannerWithCheckboxesComponent } from './components/planner/planner-with-checkboxes/planner-with-checkboxes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlannerSimpleComponent
+    PlannerSimpleComponent,
+    HeaderComponent,
+    PlannerComponent,
+    PlannerWithCheckboxesComponent
   ],
     imports: [
         BrowserModule,
