@@ -14,7 +14,7 @@ export class PlannerWithCheckboxesComponent {
   tasks: PlannerTask[] = [
     {
       text: 'Task 1',
-      done: true
+      done: false
     }
   ];
   inputValue: string = '';

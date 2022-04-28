@@ -8,6 +8,7 @@ import {FormsModule} from "@angular/forms";
 import { HeaderComponent } from './components/header/header.component';
 import { PlannerComponent } from './components/planner/planner.component';
 import { PlannerWithCheckboxesComponent } from './components/planner/planner-with-checkboxes/planner-with-checkboxes.component';
+import { PlannerWithCkeckboxesAndFiltersComponent } from './components/planner/planner-with-ckeckboxes-and-filters/planner-with-ckeckboxes-and-filters.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PlannerWithCheckboxesComponent } from './components/planner/planner-wit
     PlannerSimpleComponent,
     HeaderComponent,
     PlannerComponent,
-    PlannerWithCheckboxesComponent
+    PlannerWithCheckboxesComponent,
+    PlannerWithCkeckboxesAndFiltersComponent
   ],
     imports: [
         BrowserModule,
