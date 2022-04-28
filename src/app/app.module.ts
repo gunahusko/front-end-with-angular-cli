@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PlannerComponent } from './components/planner/planner.component';
 import { PlannerWithCheckboxesComponent } from './components/planner/planner-with-checkboxes/planner-with-checkboxes.component';
 import { PlannerWithCkeckboxesAndFiltersComponent } from './components/planner/planner-with-ckeckboxes-and-filters/planner-with-ckeckboxes-and-filters.component';
+import { PlannerWithDeleteComponent } from './components/planner/planner-with-delete/planner-with-delete.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PlannerWithCkeckboxesAndFiltersComponent } from './components/planner/p
     HeaderComponent,
     PlannerComponent,
     PlannerWithCheckboxesComponent,
-    PlannerWithCkeckboxesAndFiltersComponent
+    PlannerWithCkeckboxesAndFiltersComponent,
+    PlannerWithDeleteComponent
   ],
     imports: [
         BrowserModule,
