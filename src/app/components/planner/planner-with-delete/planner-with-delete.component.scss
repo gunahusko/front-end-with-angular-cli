@@ -1,0 +1,90 @@
+.planner-with-checkboxes-and-filters-section {
+  padding: 20px 0 0 0;
+}
+
+.planner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.planner-title {
+  text-align: center;
+  color: dimgray;
+}
+
+.planner {
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #d9ceff;
+  width: 500px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.planner-action-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 20px 0;
+}
+
+.planner-task-input {
+  width: 100%;
+  height: 34px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0, rgba(0, 0, 0, 0.1) 0 0 1px 0;
+  border-radius: 4px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.planner-task-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 0 0;
+}
+
+.planner-task {
+  border: 1px solid white;
+  border-radius: 4px 0 0 4px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 3px 3px 0;
+}
+
+.planner-task-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.planner-task-text {
+  color: dimgray;
+}
+
+.task-done {
+  text-decoration: line-through;
+}
+
+.planner-button-delete {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: dimgray;
+}
+
+.planner-filter-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0 0 0;
+  gap: 10px;
+}

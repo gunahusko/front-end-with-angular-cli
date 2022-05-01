@@ -1,0 +1,51 @@
+<section class="planner-section">
+  <h1 class="planner-title">Planner with Progress bar</h1>
+  <div class="planner-container">
+    <div class="planner">
+      <div class="planner-action-container">
+        <input
+          class="planner-task-input"
+          type="text"
+          placeholder="Add new text..."
+          [(ngModel)]="inputValue"
+          (keydown.enter)="addTask()"
+        />
+        <button class="blue-button-style" (click)="addTask()">
+          Add
+        </button>
+      </div>
+      <p class="planner-progress-bar-title">Completed Tasks</p>
+      <div class="planner-progress-bar-container">
+        <div class="planner-progress-bar">
+          <div class="planner-progress-bar-fill"></div>
+          <span class="planner-progress-bar-text">0%</span>
+        </div>
+      </div>
+      <div class="planner-task-container" *ngFor="let task of filteredTasks">
+        <div class="planner-task">
+          <div>
+            <input
+              class="planner-task-checkbox"
+              type="checkbox"
+              [checked]="task.done"
+              (change)="toggleTaskDone($event, task.id)"
+            />
+          </div>
+          <div>
+            <p class="planner-task-text" [ngClass]="{ 'task-done': task.done }">
+              {{ task.text }}
+            </p>
+          </div>
+        </div>
+        <div class="planner-checkbox-delete-container">
+          <button class="planner-button-delete" type="button" (click)="removeTask(task.id)">X</button>
+        </div>
+      </div>
+      <div class="planner-filter-button-container">
+        <button class="filters-button-style" (click)="setTaskFilter(plannerTaskFilterEnum.All)">All</button>
+        <button class="filters-button-style" (click)="setTaskFilter(plannerTaskFilterEnum.InProgress)">In Progress</button>
+        <button class="filters-button-style" (click)="setTaskFilter(plannerTaskFilterEnum.Completed)">Completed</button>
+      </div>
+    </div>
+  </div>
+</section>
