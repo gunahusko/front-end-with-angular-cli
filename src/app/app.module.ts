@@ -12,6 +12,7 @@ import { PlannerWithDeleteComponent } from './components/planner/planner-with-de
 import { PlannerWithProgressBarComponent } from './components/planner/planner-with-progress-bar/planner-with-progress-bar.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
+import { SignUpComponent } from './components/forms/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
     PlannerWithDeleteComponent,
     PlannerWithProgressBarComponent,
     FormsComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    SignUpComponent
   ],
     imports: [
         BrowserModule,
