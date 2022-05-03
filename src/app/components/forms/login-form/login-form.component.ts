@@ -15,6 +15,7 @@ export class LoginFormComponent implements OnInit {
   loginEvent = new EventEmitter<LoginDetails>();
 
   loginForm = new FormGroup({});
+
   countries = [
     {
       title: 'Latvia',

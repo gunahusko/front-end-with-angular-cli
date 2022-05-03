@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LoginDetails } from "../../shared/models/login.model";
+import { SignUpDetails } from "../../shared/models/signup.model";
 
 @Component({
   selector: 'app-forms',
@@ -11,5 +12,9 @@ export class FormsComponent {
 
   login(loginDetails: LoginDetails): void {
     console.log('login info', loginDetails);
+  }
+
+  signUp(signUpDetails: SignUpDetails): void {
+    console.log('sign up info', signUpDetails);
   }
 }
